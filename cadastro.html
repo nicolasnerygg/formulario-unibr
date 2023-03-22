@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Cadastro UNIBR - Cursos DEVs</h1>
+    </div>
+    <form class="container" method="post" action="">
+        <fieldset class="formulario_pessoais">
+            <legend>Dados Pessoais</legend>
+            <div class="container__div">
+                    <div class="div1">
+                    <div class="dados__pessoais">
+                        <div class="container__linebox">
+                            <label for="nome" class="nomes__cadastro">Nome:</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo" maxlength="30" name=nome/>
+                        </div>
+                        <div class="container__linebox">
+                            <label for="cpf" class="nomes__cadastro">CPF:</label><br>
+                            <input type="text" id="cpf" placeholder="Ex.: 000.000.000-00" maxlength="14" >
+                        </div>
+                        <div class="container__linebox">
+                            <label for="dia" class="nomes__cadastro">Data de Nascimento</label>
+                            <input type="date" id="dia" name="dia">
+                        </div>
+                        <div class="container__linebox">
+                            <label for="telefone" class="nomes__cadastro">Telefone:</label>
+                            <input type="tel" id="telefone" placeholder="Ex.: (00) 00000-0000" maxlength="30">
+                        </div>
+                        <div class="container__linebox">
+                            <label for="email" class="nomes__cadastro">Email:</strong></label>
+                            <input type="email" id="email" placeholder="exemplo@email.com" maxlength="30">
+                        </div>
+                        <div class="container__linebox">
+                            <label for="gen" class="nomes__cadastro">Gênero</label>
+                        </div>
+                        <select name="gen" class="container__linebox">
+                            <option value="">Escolha um gênero.</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="container__linebox">
+                        <label for="cep" class="nomes__cadastro">CEP</label><br>
+                        <input type="text" id="cep" placeholder="Ex: 00000-000" maxlength="9">
+                        <div id="error"></div>
+                    </div>
+                     <div class="container__linebox">
+                        <label for="endereco" class="nomes__cadastro">Endereço:</label>
+                        <input type="text" id="endereco">
+                    </div>
+                    <div class="container__linebox">
+                        <label for="numero" class="nomes__cadastro">Número:</label>
+                        <input type="text" id="numero">
+                    </div>
+                    <div class="container__linebox">
+                        <label for="bairro" class="nomes__cadastro">Bairro:</label>
+                        <input type="text" id="bairro">
+                    </div>
+                    <div class="container__linebox">
+                        <label for="complemento" class="nomes__cadastro">Complemento:</label>
+                        <input type="text" id="complemento">
+                    </div>
+                    <div class="container__linebox">
+                        <label for="cidade" class="nomes__cadastro">Cidade:</label>
+                        <input type="text" id="cidade">
+                    </div>
+                    <div class="container__linebox">
+                        <label for="uf" class="nomes__cadastro">UF:</label><br>
+                        <input type="text" id="uf">
+                    </div>
+                    <button id="botao__pesquisa">Consultar</button>
+                </div>
+            </div>
+        </fieldset>
+           
+        <fieldset class="formulario_profissionais">
+            <legend>Dados Profissionais</legend>
+            <div class="container2__div">
+                <div class="div3">
+                <div clas="dados__profissionais">
+                    <label for="dev" class="nomes__cadastro">Você é um DEV?</label>
+                    <select name="dev" id="dev">
+                        <option value="">Selecione</option>
+                        <option value="front_end">Front-end</option>
+                        <option value="back_end">Back-end</option>
+                        <option value="fullstack">Full Stack</option>
+                        <option value="nao">Não</option>
+                    </select>
+                    <label for="senioridade" class="nomes__cadastro">Senioridade</label><br>
+                    <select name="senioridade" id="senioridade">
+                        <option value="">Selecione</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                        <option value="nenhuma">Nenhuma</option>
+                    </select>
+                    <label for="ingles" class="nomes__cadastro">Qual é o nível do seu inglês?</label><br>
+                    <select name="ingles" id="ingles">
+                        <option value="">Selecione</option>
+                        <option value="basico">Básico</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+                </div>
+                <div class="div4">
+                    <label for="area" class="nomes__cadastro">Qual é o curso do seu interesse?</label><br>
+                    <select name="area" id="area">
+                        <option value="">Selecione</option>
+                        <option value="programador">Programador</option>
+                        <option value="front_end">Front-end</option>
+                        <option value="data_science">Data Science</option>
+                        <option value="devops">DevOps</option>
+                        <option value="ux_design">UX & Design</option>
+                        <option value="inovacao_gestao">Inovação & Gestão</option>
+                    </select>
+                </div>
+            </div>
+            <label for="radio" class="nomes__cadastro nomes__cadastro__centro">Selecione as tecnologias que você utiliza:</label><br>
+            <div class="div5">
+                <input class="input__radio" type="radio" name="linguagem" value="html">HTML<br>
+                <input class="input__radio" type="radio" name="linguagem" value="css">CSS<br>
+                <input class="input__radio" type="radio" name="linguagem" value="javascript">JavaScript<br>
+                <input class="input__radio" type="radio" name="linguagem" value="php">PHP<br>
+                <input class="input__radio" type="radio" name="linguagem" value="c#">C#<br>
+                <input class="input__radio" type="radio" name="linguagem" value="python">Python<br>
+                <input class="input__radio" type="radio" name="linguagem" value="java">JAVA<br>
+            </div>
+            <label for="sobre" class="nomes__cadastro">Conte um pouco mais da sua experiência:</label>
+            <textarea id="sobre" name="sobre" row="15" cols="50"></textarea>
+            <input id="limpar" type="reset" value="Limpar">
+            <input id="enviar" type="submit" value="Enviar">
+        </fieldset>
+    </div>
+    </form>
+    <footer class="rodape">
+        <h2 class="credito">Desenvolvido por Nicolas Nery - 2023</h2>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
