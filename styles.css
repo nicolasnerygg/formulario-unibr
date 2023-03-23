@@ -35,19 +35,19 @@ body {
 .formulario_pessoais{
    /* background-color: #434343; */
     align-items: center;
-    height: 700px;
-    width: 600px;
-    padding: 20px;
-    margin: 50px 0px 50px 100px;
-    border-radius: 20px;
+    height: 43.75em;
+    width: 37.5em;
+    padding: 1.25em;
+    margin: 3.125em 0 3.125em 6.25em;
+    border-radius: 1.25em;
 }
 .formulario_profissionais {
     align-items: center;
-    height: 700px;
-    width: 500px;
-    padding: 20px;
-    margin: 50px 0px 50px 100px;
-    border-radius: 20px;
+    height: 43.75em;
+    width: 31.25em;
+    padding: 1.25em;
+    margin: 3.125em 0 3.125em 6.25em;
+    border-radius: 1.25em;
 }
 .container{
     height: 100vh;
@@ -60,7 +60,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "dados cep";
     justify-content: space-between;
-    height: 600px;
+    height: 37.5em;
 
 }
 .div1 {
@@ -91,10 +91,10 @@ body {
 .div5 {
     display: flex;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     font-family: var(--font-principal);
     color: var(--cor-de-fonte-principal);
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 .nomes__cadastro__centro {
     justify-content: center;
@@ -107,110 +107,98 @@ body {
 
 legend {
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #FFF;
-    padding: 2px;
+    padding: 0.125em;
 }
 
 .titulo {
-    font-size: 32px;
+    font-size: 2em;
     color: var(--cor-de-fonte-principal);
 }
 
 .subtitulo {
-    font-size: 32px;
+    font-size: 2em;
     color: var(--cor-de-fonte-principal);
 }
 
 .nomes__cadastro {
     font-family: var(--font-principal);
-    font-size: 24px;
+    font-size: 1.5em;
     color: #FFF;
-    margin: 5px;
+    margin: 0.313em;
 }
 
 .container__linebox {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 input {
-    width: 250px;
-    height: 23px;
+    width: 15.625em;
+    height: 1.438em;
 }
 .input__radio {
-    width: 20px;
-    height: 23px;
-    border: 2px solid #434343;
-    border-radius: 20px;
-    padding: 4px;
+    width: 1.25em;
+    height: 1.438em;
+    border: 0.125em solid #434343;
+    border-radius: 1.25em;
+    padding: 0.25em;
     margin-left: 1.5em;
     margin-right: 0.2em;
 }
 
 input, select {
-    border: 2px solid #434343;
-    border-radius: 20px;
-    padding: 4px;
+    border: 0.125em solid #434343;
+    border-radius: 1.25em;
+    padding: 0.25em;
 }
 textarea {
-    height: 200px;
+    height: 12.5em;
     resize: none;
     border: 2px solid #434343;;
-    border-radius: 20px;
-    padding: 4px;
+    border-radius: 1.25em;
+    padding: 0.25em;
 }
 
 #error {
     color: white;
 }
 #botao__pesquisa {
-    width: 80px;
-    height: 40px;
+    width: 5em;
+    height: 2.5em;
     background-color: #FFF;
     float: right;
-    margin-top: 30px;
-    margin-right: 30px;
+    margin-top: 1.875em;
+    margin-right: 1.875em;
     position: absolute;
-    bottom: 225px;
-    left: 575   px;
+    bottom: 14.063em;
+    left: 35.938em;
 }
-#enviar {
-    width: 80px;
-    height: 40px;
-    background-color: #FFF;
-    margin-right: 25px;
-    margin-left: 50px;
-    position: absolute;
-    left: 1525px;
-    bottom: 225px;
-    border-radius: 0;
-    border: 2px solid #434343;
-
+.botoes1 {
+    display: flex;
 }
+ 
 #limpar {
-    width: 80px;
-    height: 40px;
+    display: flex;
+    width: 5em;
+    height: 2.5em;  
     background-color: #FFF;
-    position: absolute;
-    bottom: 225px;
-    border-radius: 0;
-    border: 2px solid #434343;;
 }
 #dev {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 #senioridade {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 #area {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 #ingles {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 ::placeholder {
@@ -224,5 +212,5 @@ textarea {
     color: var(--cor-de-fonte-principal);
     font-family: var(--font-principal);
     background-color: #5d64768e;   
-    height: 60px;
+    height: 3.75em;
 }
